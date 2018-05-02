@@ -1,5 +1,8 @@
 package com.javachort3.project_weather_;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Location {
     private String city;
     private String country;
