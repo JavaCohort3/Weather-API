@@ -1,11 +1,11 @@
 package com.javachort3.project_weather_;
 
-public class wind {
+public class Wind {
     private String Chill;
     private String direction;
     private String speed;
 
-    public wind() {
+    public Wind() {
         }
 
     public String getChill() {
@@ -34,7 +34,7 @@ public class wind {
 
     @Override
     public String toString() {
-        return "wind{" +
+        return "Wind{" +
                 "Chill='" + Chill + '\'' +
                 ", direction='" + direction + '\'' +
                 ", speed='" + speed + '\'' +

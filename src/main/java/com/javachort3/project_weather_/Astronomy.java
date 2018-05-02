@@ -1,43 +1,33 @@
 package com.javachort3.project_weather_;
 
 public class Astronomy {
-    private String chill;
-    private String direction;
-    private String speed;
+    private String sunrise;
+    private String sunset;
 
     public Astronomy() {
     }
 
-    public String getChill() {
-        return chill;
+    public String getSunrise() {
+        return sunrise;
     }
 
-    public void setChill(String chill) {
-        this.chill = chill;
+    public void setSunrise(String sunrise) {
+        this.sunrise = sunrise;
     }
 
-    public String getDirection() {
-        return direction;
+    public String getSunset() {
+        return sunset;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
-
-    public String getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(String speed) {
-        this.speed = speed;
+    public void setSunset(String sunset) {
+        this.sunset = sunset;
     }
 
     @Override
     public String toString() {
         return "Astronomy{" +
-                "chill='" + chill + '\'' +
-                ", direction='" + direction + '\'' +
-                ", speed='" + speed + '\'' +
+                "sunrise='" + sunrise + '\'' +
+                ", sunset='" + sunset + '\'' +
                 '}';
     }
 }
