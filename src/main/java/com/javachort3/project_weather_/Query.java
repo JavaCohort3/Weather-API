@@ -1,4 +1,4 @@
-package aermias.Weather_API_Project;
+package aermias.project_weather_;
 
 public class Query {
     private int count;
