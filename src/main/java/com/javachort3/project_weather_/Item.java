@@ -1,4 +1,4 @@
-package aermias.Weather_API_Project;
+package com.javachort3.project_weather_;
 
 import java.util.Arrays;
 
