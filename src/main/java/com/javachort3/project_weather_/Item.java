@@ -1,5 +1,7 @@
 package aermias.Weather_API_Project;
 
+import java.util.Arrays;
+
 public class Item {
     private String title;
     private String lat;
@@ -19,7 +21,7 @@ public class Item {
     public String getLat() { return lat; }
     public void setLat(String lat) { this.lat = lat; }
 
-    public String getLong_() { return long_; } 
+    public String getLong_() { return long_; }
     public void setLong_(String long_) { this.long_ = long_; }
 
     public String getLink() { return link; }
@@ -39,4 +41,19 @@ public class Item {
 
     public GUID getGuid() { return guid; }
     public void setGuid(GUID guid) { this.guid = guid; }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "title='" + title + '\'' +
+                ", lat='" + lat + '\'' +
+                ", long_='" + long_ + '\'' +
+                ", link='" + link + '\'' +
+                ", pubDate='" + pubDate + '\'' +
+                ", condition=" + condition +
+                ", forecasts=" + Arrays.toString(forecasts) +
+                ", description='" + description + '\'' +
+                ", guid=" + guid +
+                '}';
+    }
 }
