@@ -1,7 +1,10 @@
 package com.javachort3.project_weather_;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Date;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Condition {
 
     private String code;
