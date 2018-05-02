@@ -2,6 +2,7 @@ package com.javachort3.project_weather_;
 
 import java.util.Date;
 
+
 public class Condition {
 
     private String code;
