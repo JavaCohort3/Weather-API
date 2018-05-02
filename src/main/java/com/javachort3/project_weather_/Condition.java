@@ -16,16 +16,32 @@ public class Condition {
         return code;
     }
 
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     public Date getDate() {
         return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public String getTemp() {
         return temp;
     }
 
+    public void setTemp(String temp) {
+        this.temp = temp;
+    }
+
     public String getText() {
         return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     @Override
