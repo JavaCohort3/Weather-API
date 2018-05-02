@@ -22,7 +22,7 @@ public class TaskScheduler {
         public CommandLineRunner run(RestTemplate restTxemplate) throws Exception {
             return args -> {
                 logger.info("Application started with command-line arguments: {} . " +
-                        "\n To kill this application, press Ctrl + C..", Arrays.toString(args));
+                        "\n To kill this application, press Ctrl + C.", Arrays.toString(args));
             };
         }
     }
