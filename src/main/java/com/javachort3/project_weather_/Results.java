@@ -1,11 +1,12 @@
 package com.javachort3.project_weather_;
 
-import java.nio.channels.Channel;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-public class Result {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Results {
     private Channel channel;
 
-    public Result() {
+    public Results() {
 
     }
 
@@ -19,7 +20,7 @@ public class Result {
 
     @Override
     public String toString() {
-        return "Result{" +
+        return "Results{" +
                 "channel=" + channel +
                 '}';
     }

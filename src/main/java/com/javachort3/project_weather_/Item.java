@@ -1,7 +1,10 @@
 package com.javachort3.project_weather_;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Arrays;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Item {
     private String title;
     private String lat;
