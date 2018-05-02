@@ -1,4 +1,4 @@
-package com.jermaine.weatherastronomyWind;
+package com.javachort3.project_weather_;
 
 public class wind {
     private String Chill;
