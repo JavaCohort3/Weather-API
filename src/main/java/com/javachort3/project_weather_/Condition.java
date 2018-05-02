@@ -5,7 +5,7 @@ import java.util.Date;
 public class Condition {
 
     private String code;
-    private Date date;
+    private String date;
     private String temp;
     private String text;
 
@@ -20,11 +20,11 @@ public class Condition {
         this.code = code;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
