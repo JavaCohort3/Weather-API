@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 
 @Component
-public class TaskShcheduler implements CommandLineRunner {
+public class TaskScheduler implements CommandLineRunner {
 
 
     @Bean
