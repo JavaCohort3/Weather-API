@@ -1,4 +1,4 @@
-package aermias.project_weather_;
+package com.javachort3.project_weather_;
 
 public class Query {
     private int count;
