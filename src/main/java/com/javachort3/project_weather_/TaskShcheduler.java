@@ -8,10 +8,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
+
 
 @Component
 public class TaskShcheduler implements CommandLineRunner {
 
+    private final static Logger logger = Logger.getLogger(TaskShcheduler.class.getName());
 
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder){
@@ -23,6 +26,8 @@ public class TaskShcheduler implements CommandLineRunner {
         return args -> {
             logger.info("Application started with command-line arguments: {} . " +
                     "\n To kill this application, press Ctrl + C.", Arrays.toString(args));
+
+
         };
     }
 }
