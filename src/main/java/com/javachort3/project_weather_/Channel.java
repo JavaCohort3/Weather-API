@@ -126,4 +126,22 @@ public class Channel {
         this.item = item;
     }
 
+    @Override
+    public String   toString() {
+        return "Channel{" +
+                "units=" + units +
+                ", title='" + title + '\'' +
+                ", link='" + link + '\'' +
+                ", description='" + description + '\'' +
+                ", language='" + language + '\'' +
+                ", lastBuildDate='" + lastBuildDate + '\'' +
+                ", timeToLive='" + timeToLive + '\'' +
+                ", location=" + location +
+                ", wind=" + wind +
+                ", armoshpere=" + armoshpere +
+                ", astronomy=" + astronomy +
+                ", image=" + image +
+                ", item=" + item +
+                '}';
+    }
 }
