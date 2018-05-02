@@ -21,7 +21,7 @@ public class TaskScheduler {
         @Bean
         public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
             return args -> {
-                logger.info("Application started with command-line arguments: {} ." +
+                logger.info("Application started with command-line arguments: {} . " +
                         "\n To kill this application, press Ctrl + C. ", Arrays.toString(args));
             };
         }
