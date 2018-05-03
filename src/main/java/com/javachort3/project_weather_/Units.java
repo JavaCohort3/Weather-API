@@ -6,9 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Units {
     private String distance, pressure, speed, temp;
 
-    public Units(){
-
-    }
+    public Units(){}
 
     public String getDistance() {
         return distance;

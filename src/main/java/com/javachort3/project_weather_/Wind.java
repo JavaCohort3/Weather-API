@@ -8,8 +8,7 @@ public class Wind {
     private String direction;
     private String speed;
 
-    public Wind() {
-        }
+    public Wind() {}
 
     public String getChill() {
         return Chill;

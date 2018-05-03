@@ -6,9 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Results {
     private Channel channel;
 
-    public Results() {
-
-    }
+    public Results() {}
 
     public Channel getChannel() {
         return channel;

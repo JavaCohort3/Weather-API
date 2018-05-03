@@ -7,9 +7,7 @@ public class GUID {
 
     private String isPermalink;
 
-    public GUID() {
-
-    }
+    public GUID() {}
 
     public String getIsPermalink() {
         return isPermalink;

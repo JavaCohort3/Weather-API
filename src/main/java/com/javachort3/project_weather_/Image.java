@@ -7,9 +7,7 @@ public class Image {
 
     private String title, width, height, link, url;
 
-    public Image(){
-
-    }
+    public Image(){}
 
     public String getTitle() {
         return title;

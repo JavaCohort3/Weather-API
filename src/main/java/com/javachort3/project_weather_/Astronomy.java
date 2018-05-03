@@ -7,8 +7,7 @@ public class Astronomy {
     private String sunrise;
     private String sunset;
 
-    public Astronomy() {
-    }
+    public Astronomy() {}
 
     public String getSunrise() {
         return sunrise;

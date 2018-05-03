@@ -12,8 +12,7 @@ public class Condition {
     private String temp;
     private String text;
 
-    public Condition () {
-    }
+    public Condition () {}
 
     public String getCode() {
         return code;

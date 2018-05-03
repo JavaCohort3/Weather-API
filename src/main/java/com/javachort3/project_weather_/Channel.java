@@ -21,9 +21,7 @@ public class Channel {
     private Item item;
 
 
-    public Channel(){
-
-    }
+    public Channel(){}
 
 
     public Units getUnits() {
