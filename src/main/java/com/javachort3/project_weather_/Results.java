@@ -2,14 +2,13 @@ package com.javachort3.project_weather_;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Results {
     private Channel channel;
 
     public Results() {}
 
-    public Channel getChannel(){
+    public Channel getChannel() {
         return channel;
     }
 
