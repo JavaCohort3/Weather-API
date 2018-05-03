@@ -1,5 +1,9 @@
 package com.javachort3.project_weather_;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Channel {
 
     private Units units;
@@ -11,15 +15,13 @@ public class Channel {
     private String timeToLive;
     private Location location;
     private Wind wind;
-    private Atmosphere armoshpere;
+    private Atmosphere atmosphere;
     private Astronomy astronomy;
     private Image image;
     private Item item;
 
 
-    public Channel(){
-
-    }
+    public Channel(){}
 
 
     public Units getUnits() {
@@ -94,12 +96,12 @@ public class Channel {
         this.wind = wind;
     }
 
-    public Atmosphere getArmoshpere() {
-        return armoshpere;
+    public Atmosphere getAtmosphere() {
+        return atmosphere;
     }
 
-    public void setArmoshpere(Atmosphere armoshpere) {
-        this.armoshpere = armoshpere;
+    public void setAtmosphere(Atmosphere atmosphere) {
+        this.atmosphere = atmosphere;
     }
 
     public Astronomy getAstronomy() {
@@ -138,7 +140,7 @@ public class Channel {
                 ", timeToLive='" + timeToLive + '\'' +
                 ", location=" + location +
                 ", wind=" + wind +
-                ", armoshpere=" + armoshpere +
+                ", atmosphere=" + atmosphere +
                 ", astronomy=" + astronomy +
                 ", image=" + image +
                 ", item=" + item +

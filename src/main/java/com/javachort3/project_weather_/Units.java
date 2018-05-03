@@ -1,11 +1,12 @@
 package com.javachort3.project_weather_;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Units {
     private String distance, pressure, speed, temp;
 
-    public Units(){
-
-    }
+    public Units(){}
 
     public String getDistance() {
         return distance;
