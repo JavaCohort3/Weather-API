@@ -9,13 +9,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
 
 
 @Component
 public class TaskScheduler {
 
-    private static final Logger log = (Logger) LoggerFactory.getLogger(Application.class);
+    private static final Logger log = LoggerFactory.getLogger(Application.class);
 
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder){
