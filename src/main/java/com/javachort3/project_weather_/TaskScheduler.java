@@ -22,13 +22,16 @@ public class TaskScheduler {
         return builder.build();
     }
 
-    @Bean
-    public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-        return args -> {
-            log.info("Application started with command-line arguments: {} . " +
-                "\n To kill this application, press Ctrl + C. " + Arrays.toString(args));
+
+        @Bean
+        public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
+            return args -> {
+                log.info("Application started with command-line arguments: {} . " +
+                        "\n To kill this application, press Ctrl + C. " + Arrays.toString(args));
             };
-    }
+
+
+        }
 
     @Scheduled(fixedRate = 30000)
     public void reportWeather() {
