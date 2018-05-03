@@ -15,20 +15,22 @@ import java.util.logging.Logger;
 @SpringBootApplication
 public class Application {
 	private static final Logger log = (Logger) LoggerFactory.getLogger(Application.class);
+	private static RestTemplateBuilder builder;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder builder){
+	public static RestTemplate restTemplate(RestTemplateBuilder builder){
 		return builder.build();
 	}
 
 	@Bean
-	public static CommandLineRunner consumeAPI(RestTemplate restTemplate) throws Exception {
+	public static CommandLineRunner consumeAPI() throws Exception {
+		restTemplate(builder);
 		return args -> {
-			Query query = restTemplate.getForObject(
+			Query query = restTemplate(builder).getForObject(
 					"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22wilmington%2C%20de%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys", Query.class);
 			log.info(query.toString());
 		};
