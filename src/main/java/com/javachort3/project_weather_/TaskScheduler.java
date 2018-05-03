@@ -11,6 +11,8 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
+import static com.javachort3.project_weather_.Application.consumeAPI;
+
 
 @Component
 public class TaskScheduler {

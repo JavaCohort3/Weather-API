@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.client.RestTemplate;
 
 import org.slf4j.Logger;
@@ -26,7 +27,7 @@ public class Application {
 		return builder.build();
 	}
 
-	@Bean
+	@Bean @Scheduled(fixedRate = 30000)
 	public static CommandLineRunner consumeAPI() throws Exception {
 		RestTemplate restTemplate = restTemplate(builder);
 		return args -> {
