@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
@@ -27,6 +28,8 @@ public class TaskScheduler {
                 log.info("Application started with command-line arguments: {} . " +
                         "\n To kill this application, press Ctrl + C. " + Arrays.toString(args));
             };
+
+
         }
     }
 
