@@ -17,10 +17,11 @@ public class TaskScheduler {
 
     private static final Logger log = (Logger) LoggerFactory.getLogger(Application.class);
 
-        @Bean
-        public RestTemplate restTemplate(RestTemplateBuilder builder){
-            return builder.build();
-        }
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder){
+        return builder.build();
+    }
+
 
         @Bean
         public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
@@ -31,6 +32,11 @@ public class TaskScheduler {
 
 
         }
+
+    @Scheduled(fixedRate = 30000)
+    public void reportWeather() {
+        log.info("The weather is now: " + "\n");
     }
+}
 
 
