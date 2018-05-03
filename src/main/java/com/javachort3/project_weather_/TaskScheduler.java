@@ -33,6 +33,7 @@ public class TaskScheduler {
     @Scheduled(fixedRate = 30000)
     public void reportWeather() {
         log.info("The weather is now: " + "\n");
+        consumeAPI();
     }
 }
 
