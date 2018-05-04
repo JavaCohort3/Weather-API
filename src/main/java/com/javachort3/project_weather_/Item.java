@@ -27,7 +27,7 @@ public class Item {
     public String getLong_() { return long_; }
     public void setLong_(String long_) { this.long_ = long_; }
 
-    public String getLink() { return link; }
+    public String getLink() { return this.link; }
     public void setLink(String link) { this.link = link; }
 
     public String getPubDate() { return pubDate; }

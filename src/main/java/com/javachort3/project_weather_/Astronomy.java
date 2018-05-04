@@ -10,7 +10,7 @@ public class Astronomy {
     public Astronomy() {}
 
     public String getSunrise() {
-        return sunrise;
+        return this.sunrise;
     }
 
     public void setSunrise(String sunrise) {
