@@ -5,15 +5,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GUID {
 
-    private String isPermalink;
+    private boolean isPermalink;
 
     public GUID() {}
 
-    public String getIsPermalink() {
+    public boolean getIsPermalink() {
         return isPermalink;
     }
 
-    public void setIsPermalink(String isPermalink) {
+    public void setIsPermalink(boolean isPermalink) {
         this.isPermalink = isPermalink;
     }
 
