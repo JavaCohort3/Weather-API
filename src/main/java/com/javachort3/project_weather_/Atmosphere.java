@@ -11,7 +11,9 @@ public class Atmosphere {
     private String visibility;
 
 
-    public Atmosphere() {}
+    public Atmosphere() {
+
+    }
 
     public String getHumidity() {
         return humidity;

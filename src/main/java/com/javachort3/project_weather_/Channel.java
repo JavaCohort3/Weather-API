@@ -41,7 +41,7 @@ public class Channel {
     }
 
     public String getLink() {
-        return link;
+        return this.link;
     }
 
     public void setLink(String link) {

@@ -27,14 +27,14 @@ public class Application {
 		return builder.build();
 	}
 
-	@Scheduled(fixedRate = 30000)
-	@Bean
+    @Bean
+    @Scheduled(fixedRate = 30000)
 	public static CommandLineRunner consumeAPI() throws Exception {
 		RestTemplate restTemplate = restTemplate(builder);
 		return args -> {
-			Query query = restTemplate.getForObject(
-					"https://query.yahooapis.com/v1/public/yql?q=select+*+from+weather.forecast+where+woeid+in+(select+woeid+from+geo.places(1)+where+text=\"wilmington, +de\")&format=json", Query.class);
-			log.info(query.toString());
+			Weather weather = restTemplate.getForObject(
+					"https://query.yahooapis.com/v1/public/yql?q=select+*+from+weather.forecast+where+woeid+in+(select+woeid+from+geo.places(1)+where+text=\"wilmington, +de\")&format=json", Weather.class);
+			log.info(weather.toString());
 		};
 	}
 }
