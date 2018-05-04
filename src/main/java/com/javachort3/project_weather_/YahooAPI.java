@@ -4,10 +4,7 @@ public class YahooAPI {
 
     private Query query;
 
-    public YahooAPI() {
-
-    }
-
+    public YahooAPI() {}
 
     public Query getQuery() {
         return query;
